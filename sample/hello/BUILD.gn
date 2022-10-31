@@ -1,0 +1,8 @@
+import("//build/lite/config/component/lite_component.gni")
+lite_component("hello-OHOS") {
+  features = [ ":helloworld" ]
+}
+executable("helloworld") {
+  output_name = "helloworld"
+  sources = [ "src/helloworld.c" ]
+}

@@ -1,0 +1,20 @@
+static_library("myapp") {
+    sources = [
+        "hello.c"
+    ]
+    include_dirs = [
+        "../moving",
+        "../ssd1306",
+        "//foundation/communication/dsoftbus/interfaces/kits/bus_center",
+        "//utils/native/lite/include",
+        "//kernel/liteos_m/components/cmsis/2.0",
+        "//base/iot_hardware/peripheral/interfaces/kits",
+        "../../common/inc",
+        "//foundation/communication/wifi_lite/interfaces/wifiservice",
+        "//kernel/liteos_m/kal",
+        "//utils/native/lite/include",
+        "//third_party/cJSON",
+        "//device/soc/hisilicon/hi3861v100/hi3861_adapter/hals/communication/wifi_lite/wifiservice",
+        "//device/soc/hisilicon/hi3861v100/hi3861_adapter/kal",
+    ]
+}

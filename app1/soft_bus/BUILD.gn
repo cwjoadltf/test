@@ -1,0 +1,33 @@
+
+static_library("soft_bus") {
+    sources = [
+        # "soft_bus_car.c",
+        "soft_bus_sensor.c"
+    ]
+
+    include_dirs = [
+        "//foundation/communication/dsoftbus/interfaces/kits/bus_center",
+        "../wifi_sta",
+        "//utils/native/lite/include",
+        "//kernel/liteos_m/components/cmsis/2.0",
+        "//base/iot_hardware/peripheral/interfaces/kits",
+        "//foundation/communication/dsoftbus/core/common/include",
+        "//foundation/communication/dsoftbus/core/frame/common/include",
+        
+        "//foundation/communication/wifi_lite/interfaces/wifiservice",
+        "//foundation/communication/dsoftbus/interfaces/kits/common",
+        "//foundation/communication/dsoftbus/interfaces/kits/discovery",
+        "//foundation/communication/dsoftbus/interfaces/kits/transport",
+        "//device/soc/hisilicon/hi3861v100/hi3861_adapter/hals/communication/wifi_lite/wifiservice",
+        "//device/soc/hisilicon/hi3861v100/hi3861_adapter/kal",
+        "//device/soc/hisilicon/hi3861v100/sdk_liteos/third_party/lwip_sack/include",
+    ]
+#      deps =
+#       [ "$dsoftbus_root_path/sdk/discovery/service:dsoftbus_disc_service_sdk" ]
+#   cflags = [
+#     "-Wall",
+#     "-fPIC",
+#     "-std=c99",
+#   ]
+#   ldflags = [ "-fPIC" ]
+}

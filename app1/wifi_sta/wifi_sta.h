@@ -1,0 +1,1 @@
+extern int wifi_ready;
